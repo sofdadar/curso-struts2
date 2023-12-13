@@ -23,14 +23,29 @@
         <s:textfield id="subject" name="invoiceBean.subject"/>
       </td>
     </tr>
+    <tr>
+        <td>
+            <s:text name="form.tipoIva.message"/>
+            <s:checkbox id="tipoIva" name="invoiceBean.tipoIva" fieldValue="true"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <s:fielderror fieldName = "invoiceBean.amount" />
+            <s:text name="form.amount.message"/>
+            <s:textfield name="invoiceBean.amount" id="amount" />
+        </td>
+    </tr>
   <tr>
       <td class="evenRow">
+        <s:fielderror fieldName = "invoiceBean.dateFrom" />
         <s:text name="form.fromDate.message"/>
         <sx:datetimepicker id="dateFrom" name="invoiceBean.dateFrom"/>
       </td>
     </tr>
   <tr>
     <td class="evenRow">
+    <s:fielderror fieldName = "invoiceBean.dateTo" />
        <s:text name="form.toDate.message"/>
        <sx:datetimepicker id="dateTo" name="invoiceBean.dateTo" />
     </td>
